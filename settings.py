@@ -1,7 +1,9 @@
-SITE = 'http://www.filharmonia.rzeszow.pl/repertuar/dzien,14-02-2020.html'
+SITES = ['http://www.filharmonia.rzeszow.pl/repertuar/dzien,14-02-2020.html',
+         'http://www.filharmonia.rzeszow.pl/repertuar/dzien,22-03-2020.html']
+
 TEXT_SEARCHED = 'Kup bilet on-line'
 PHONE = '+48794753491'
-SMS_TEXT = 'Mozna kupic bilety lolo ' + SITE
+SMS_TEXT = 'Mozna kupic bilety lolo '
 
 
 class Twilio:

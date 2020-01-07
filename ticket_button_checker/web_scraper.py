@@ -1,9 +1,11 @@
+from typing import List, Tuple, Optional
+
 import requests
 
 
 class WebScraper:
-    def __init__(self, site: str):
-        self.site = site
+    def __init__(self, sites: List[str]):
+        self.sites = dict([(site, False) for site in sites])
 
     def check_on_page(self, text: str) -> bool:
         r = requests.get(self.site)
